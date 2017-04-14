@@ -434,6 +434,7 @@
                     "rollingParams": {
                         "post": {
                             "failurePolicy": "Ignore",
+			    "container-name": "${APPLICATION_NAME}-postgresql",
                             "execNewPod": {
                                 "command": ["/bin/sh", "/tmp/load_data"]
                             }
